@@ -89,7 +89,7 @@
    ```
    pm2 kill && pm2 flush
    ```
-   to kill all processess and delete the olds logs. Then start ecosystem again
+   to kill all processess and delete the the old logs. Then start ecosystem again
    ```
    pm2 start ecosystem.config.js
    ```
