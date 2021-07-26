@@ -94,17 +94,18 @@
    pm2 start ecosystem.config.js
    ```
 9. Configure PM2 to restart your apps automatically and let it start on system reboot. First run
-   ```
-   pm2 startup systemd
-   ```
-   and then run the command from the output of above command
-10. Save your PM2 environment
+
+```
+pm2 startup systemd
+```
+
+and then run the command from the output of above command 10. Save your PM2 environment
 
 ```
 pm2 save
 ```
 
-10. Start the PM2 service
+11. Start the PM2 service
 
 ```
 sudo systemctl start pm2-YOUR_USERNAME
@@ -116,17 +117,18 @@ and reboot the system
 sudo reboot
 ```
 
-Then connect to VPS through SSH again 11. Run
+Then connect to VPS through SSH again
 
-```
-pm2 monit
-```
-
-profit 12. Useful PM2 commands
-a. `pm2 list` - lists the apps managed by PM2
-b. `pm2 restart app_name` - restarts the app
-c. `pm2 info app_name` - gets info about app
-d. `pm2 monit` - process monitor displaying resources usage and their statuses
+11. Run
+    ```
+    pm2 monit
+    ```
+    profit 🎉
+12. Useful PM2 commands
+    a. `pm2 list` - lists the apps managed by PM2
+    b. `pm2 restart app_name` - restarts the app
+    c. `pm2 info app_name` - gets info about app
+    d. `pm2 monit` - process monitor displaying resources usage and their statuses
 
 # Nginx set-up
 
