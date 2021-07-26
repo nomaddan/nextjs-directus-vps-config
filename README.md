@@ -73,7 +73,11 @@
    };
    ```
    remember to change `YOUR_VPS_USERNAME`, `YOUR_REPO_NAME`, `NODE_VERSION` (check with `node -v`)
-7. Check if your app is running
+7. Start PM2 ecosystem
+   ```
+   pm2 start ecosystem.config.js
+   ```
+8. Check if your app is running
    ```
    curl http://localhost:3000
    ```
@@ -89,12 +93,12 @@
    ```
    pm2 start ecosystem.config.js
    ```
-8. Configure PM2 to restart your apps automatically and let it start on system reboot. First run
+9. Configure PM2 to restart your apps automatically and let it start on system reboot. First run
    ```
    pm2 startup systemd
    ```
    and then run the command from the output of above command
-9. Save your PM2 environment
+10. Save your PM2 environment
 
 ```
 pm2 save
@@ -267,6 +271,6 @@ and visit `http://YOUR_DOMAIN.com` 🎉
   cwd: '~/apps/cms/',
   script: 'npm',
   args: 'start',
-  exec_interpreter: '~/.nvm/versions/node/v14.17.0/bin/node',
+  exec_interpreter: '~/.nvm/versions/node/NODE_VERSION/bin/node',
 },
 ```
