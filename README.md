@@ -10,14 +10,15 @@
    ```
    ssh root@vps_ip
    ```
-   You should have received an e-mail from VPS provider with login details. [Create new user with admin privileges](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
-2. `exit` from the root account
-3. SSH with your new user
+   You should have received an e-mail from VPS provider with login details
+2. [Create new user with admin privileges](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
+3. `exit` from the root account
+4. SSH with your new user
    ```
    ssh new_user@vps_ip
    ```
-4. [Generate SSH token for Github](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-5. [Add it to your GitHub account settings](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+5. [Generate SSH token for Github](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+6. [Add it to your GitHub account settings](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
    a. You can use `cat ~/.ssh/id_ed25519.pub` command to copy the SSH public key from VPS
 
 # 3. Front-end app and PM2 set-up
