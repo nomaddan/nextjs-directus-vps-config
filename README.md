@@ -132,9 +132,13 @@
     profit 🎉
 
 13. Useful PM2 commands
+
     a. `pm2 list` - lists the apps managed by PM2
+
     b. `pm2 restart app_name` - restarts the app
+
     c. `pm2 info app_name` - gets info about app
+
     d. `pm2 monit` - process monitor displaying resources usage and their statuses
 
 # Nginx set-up
