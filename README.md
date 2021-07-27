@@ -101,13 +101,15 @@
    pm2 startup systemd
    ```
 
-   and then run the command from the output of above command 10. Save your PM2 environment
+   and then run the command from the output of above command
 
-   ```
-   pm2 save
-   ```
+10. Save your PM2 environment
 
-10. Start the PM2 service
+    ```
+    pm2 save
+    ```
+
+11. Start the PM2 service
 
     ```
     sudo systemctl start pm2-YOUR_USERNAME
@@ -121,12 +123,12 @@
 
     Then connect to VPS through SSH again
 
-11. Run
+12. Run
     ```
     pm2 monit
     ```
     profit 🎉
-12. Useful PM2 commands
+13. Useful PM2 commands
     a. `pm2 list` - lists the apps managed by PM2
     b. `pm2 restart app_name` - restarts the app
     c. `pm2 info app_name` - gets info about app
