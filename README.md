@@ -150,6 +150,7 @@
    ```
 
 2. Configure firewall
+
    a. Check available apps
 
    ```
