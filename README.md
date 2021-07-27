@@ -124,10 +124,13 @@
     Then connect to VPS through SSH again
 
 12. Run
+
     ```
     pm2 monit
     ```
+
     profit 🎉
+
 13. Useful PM2 commands
     a. `pm2 list` - lists the apps managed by PM2
     b. `pm2 restart app_name` - restarts the app
