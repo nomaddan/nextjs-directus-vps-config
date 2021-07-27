@@ -19,6 +19,7 @@
    ```
 5. [Generate SSH token for Github](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 6. [Add it to your GitHub account settings](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
    a. You can use `cat ~/.ssh/id_ed25519.pub` command to copy the SSH public key from VPS
 
 # 3. Front-end app and PM2 set-up
